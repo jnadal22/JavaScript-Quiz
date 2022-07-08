@@ -1,0 +1,37 @@
+*{
+    background-color: beige;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-weight:900;
+    font-size: x-large;
+}
+
+
+
+header{
+    display: flexbox;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 100px;
+    
+   
+}
+#question-container{
+    text-align: center;
+    justify-content:space-between;
+}
+
+.nav-bar{
+    display: flexbox;
+    
+}
+#high-scores{
+    text-align: right;
+}
+#timer{
+   text-align: left;
+}
+
+footer{
+    position: fixed;bottom: 0;left:0;right:0;height: 30px;
+    text-align: center;
+}
