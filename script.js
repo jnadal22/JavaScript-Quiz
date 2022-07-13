@@ -60,7 +60,7 @@ const myQuestions = [
   },
 ];
 
-// console.log(quizTimer)
+
 var idx = 0;
 let countdownTimer = 40;
 
@@ -70,15 +70,16 @@ if (evt.target.textContent === myQuestions[idx].correctAnswer){
   idx++
   displayQuestions()
 }else{
-  countdownTimer -= 10
+  // subtracts 5 seconds if wrong answer is selected
+  countdownTimer -= 5
   idx++
   displayQuestions()
 }
 }
-
+// this function adds the event listener to run throught each answer in the array
 function displayQuestions(){
   
-  // for (var i = 0; i < 1; i++){
+  
     questionsEl.textContent = myQuestions[idx].question;
     btn1El.textContent= myQuestions[idx].answers.a
     btn2El.textContent= myQuestions[idx].answers.b
@@ -91,7 +92,7 @@ function displayQuestions(){
 
 
 
-  // }
+  
 }
 
 
